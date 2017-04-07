@@ -17,7 +17,7 @@ namespace PrjPasswordGenerator
       -Password with single letters
       -Password only numbers
 
-      Made with love for: Adonis Mendoza
+      Made with love by: Adonis Mendoza
     **********************************************************************/
 
 
