@@ -38,6 +38,9 @@
             this.txtPassword = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.btnGenerate = new MetroFramework.Controls.MetroButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtLength)).BeginInit();
             this.SuspendLayout();
@@ -48,9 +51,9 @@
             this.groupBox1.Controls.Add(this.metroLabel1);
             this.groupBox1.Controls.Add(this.chkNumbers);
             this.groupBox1.Controls.Add(this.chkLetters);
-            this.groupBox1.Location = new System.Drawing.Point(43, 94);
+            this.groupBox1.Location = new System.Drawing.Point(76, 93);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(366, 72);
+            this.groupBox1.Size = new System.Drawing.Size(312, 82);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Settings";
@@ -60,7 +63,7 @@
             this.txtLength.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLength.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtLength.Location = new System.Drawing.Point(125, 31);
+            this.txtLength.Location = new System.Drawing.Point(121, 35);
             this.txtLength.Maximum = new decimal(new int[] {
             20,
             0,
@@ -72,7 +75,7 @@
             0,
             0});
             this.txtLength.Name = "txtLength";
-            this.txtLength.Size = new System.Drawing.Size(54, 18);
+            this.txtLength.Size = new System.Drawing.Size(42, 18);
             this.txtLength.TabIndex = 5;
             this.txtLength.Value = new decimal(new int[] {
             8,
@@ -83,7 +86,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(11, 28);
+            this.metroLabel1.Location = new System.Drawing.Point(7, 32);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(109, 19);
             this.metroLabel1.TabIndex = 4;
@@ -92,7 +95,7 @@
             // chkNumbers
             // 
             this.chkNumbers.AutoSize = true;
-            this.chkNumbers.Location = new System.Drawing.Point(249, 34);
+            this.chkNumbers.Location = new System.Drawing.Point(233, 36);
             this.chkNumbers.Name = "chkNumbers";
             this.chkNumbers.Size = new System.Drawing.Size(72, 15);
             this.chkNumbers.TabIndex = 2;
@@ -102,7 +105,7 @@
             // chkLetters
             // 
             this.chkLetters.AutoSize = true;
-            this.chkLetters.Location = new System.Drawing.Point(185, 34);
+            this.chkLetters.Location = new System.Drawing.Point(169, 36);
             this.chkLetters.Name = "chkLetters";
             this.chkLetters.Size = new System.Drawing.Size(58, 15);
             this.chkLetters.TabIndex = 1;
@@ -111,7 +114,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(332, 222);
+            this.btnClear.Location = new System.Drawing.Point(269, 255);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(77, 23);
             this.btnClear.Style = MetroFramework.MetroColorStyle.Teal;
@@ -122,7 +125,7 @@
             // 
             // btnCopy
             // 
-            this.btnCopy.Location = new System.Drawing.Point(262, 222);
+            this.btnCopy.Location = new System.Drawing.Point(199, 255);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(64, 23);
             this.btnCopy.Style = MetroFramework.MetroColorStyle.Teal;
@@ -146,7 +149,7 @@
             this.txtPassword.CustomButton.UseSelectable = true;
             this.txtPassword.CustomButton.Visible = false;
             this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(181, 181);
+            this.txtPassword.Location = new System.Drawing.Point(118, 211);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
@@ -167,7 +170,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(43, 181);
+            this.metroLabel2.Location = new System.Drawing.Point(155, 189);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(132, 19);
             this.metroLabel2.TabIndex = 11;
@@ -177,7 +180,7 @@
             // 
             this.btnGenerate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnGenerate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGenerate.Location = new System.Drawing.Point(181, 222);
+            this.btnGenerate.Location = new System.Drawing.Point(118, 255);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(75, 23);
             this.btnGenerate.Style = MetroFramework.MetroColorStyle.Teal;
@@ -187,11 +190,38 @@
             this.btnGenerate.UseSelectable = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panel1.Location = new System.Drawing.Point(457, 23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(27, 297);
+            this.panel1.TabIndex = 15;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panel2.Location = new System.Drawing.Point(0, 310);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(462, 10);
+            this.panel2.TabIndex = 16;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.panel3.Location = new System.Drawing.Point(0, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 305);
+            this.panel3.TabIndex = 17;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 319);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCopy);
@@ -203,6 +233,7 @@
             this.MinimumSize = new System.Drawing.Size(485, 319);
             this.Name = "FrmMain";
             this.ShowIcon = false;
+            this.Style = MetroFramework.MetroColorStyle.Red;
             this.Text = "Password Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -225,6 +256,9 @@
         private MetroFramework.Controls.MetroTextBox txtPassword;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroButton btnGenerate;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

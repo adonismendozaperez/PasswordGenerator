@@ -45,7 +45,7 @@ namespace PrjPasswordGenerator
         static string generatePassw(int length, CheckBox letters, CheckBox numbers)
         {
             #region Variables and Instance
-            const string validChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const string validChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZñÑáéÈÓÙÜóúÿú";
             const string validNumbers = "1234567890";
             StringBuilder result = new StringBuilder();
             StringBuilder resultAlt = new StringBuilder();
